@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.LearningActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/activity_full_margin"
+                    android:paddingVertical="@dimen/activity_large_text_size">
+
+                    <EditText
+                        android:id="@+id/learning_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="First Name"
+                        android:nextFocusDown="@id/emailForm"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/learning_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Last Name"
+                        android:nextFocusDown="@id/learning_first_name"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/learning_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Address"
+                        android:nextFocusDown="@id/learning_last_name"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/learning_suburb"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Suburb"
+                        android:nextFocusDown="@id/learning_address"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/learning_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:nextFocusDown="@id/learning_suburb"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/learning_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Phone No"
+                        android:nextFocusDown="@id/learning_email"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:paddingLeft="@dimen/activity_full_margin"
+                        android:text="Are you a" />
+
+                    <RadioGroup
+                        android:id="@+id/learning_who"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Student"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teacher"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </RadioGroup>
+
+
+                    <EditText
+                        android:id="@+id/learning_other_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="If other please explain"
+                        android:nextFocusDown="@id/learning_phone_no"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin" />
+
+
+                    <EditText
+                        android:id="@+id/learning_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="If other please explain"
+                        android:nextFocusDown="@id/learning_phone_no"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:paddingLeft="@dimen/activity_full_margin"
+                        android:text="Gender" />
+
+                    <RadioGroup
+                        android:id="@+id/learning_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Student"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non Gender Specific"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/learning_child_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="My Child Needs Help With"
+                        android:nextFocusDown="@id/learning_other_explain"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin" />
+
+
+                    <EditText
+                        android:id="@+id/learning_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Comment"
+                        android:nextFocusDown="@id/learning_child_help"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/activity_margin_padding_fifteen">
+
+                    <Button
+                        android:id="@+id/learning_button"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_btn_drawable"
+                        android:paddingHorizontal="@dimen/activity_large_text_size"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

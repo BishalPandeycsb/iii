@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.invisibleillnesses.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_form"
+        android:name="com.example.invisibleillnesses.ui.Applicationform.FormFragment"
+        android:label="@string/menu_Application_Form"
+        tools:layout="@layout/fragment_form" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.invisibleillnesses.ui.Events.EventsFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.invisibleillnesses.ui.Shop.ShopFragment"
+        android:label="@string/menu_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/nav_donation"
+        android:name="com.example.invisibleillnesses.ui.Donation.DonationFragment"
+        android:label="@string/menu_donation"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.example.invisibleillnesses.ui.About_Us.AboutUsFragment"
+        android:label="@string/menu_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
+
+</navigation>

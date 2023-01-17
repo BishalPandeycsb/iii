@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_full_gap_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add your product" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/activity_full_margin"
+                        android:paddingVertical="@dimen/activity_large_text_size">
+
+                        <EditText
+                            android:id="@+id/product_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Name"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/product_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Price"
+                            android:inputType="number"
+                            android:nextFocusDown="@id/product_name"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+
+                        <EditText
+                            android:id="@+id/product_designer"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Designer"
+                            android:nextFocusDown="@id/product_price"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/product_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Size"
+                            android:inputType="number"
+                            android:nextFocusDown="@id/product_designer"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/product_refundable_deposit"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:inputType="number"
+                            android:hint="Refundable Deposit"
+                            android:nextFocusDown="@id/product_size"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/product_weekend_hire"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Weekend Hire"
+                            android:inputType="number"
+                            android:nextFocusDown="@id/product_refundable_deposit"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/product_short_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Short description"
+                            android:nextFocusDown="@id/product_weekend_hire"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin" />
+
+
+                        <EditText
+                            android:id="@+id/product_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:background="@drawable/form_design"
+                            android:drawablePadding="@dimen/activity_half_margin"
+                            android:hint="Description"
+                            android:paddingLeft="@dimen/activity_text_full_size"
+                            android:paddingRight="@dimen/activity_half_margin" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_text_full_size"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/upload_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/login_btn_drawable"
+                                android:text="Upload Image" />
+
+                            <ImageView
+                                android:id="@+id/upload_image_view"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/product_create"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_padding_ten"
+                        android:background="@drawable/login_btn_drawable"
+                        android:paddingHorizontal="@dimen/activity_large_text_size"
+                        android:text="Create"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

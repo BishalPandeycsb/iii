@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Invisible Illnesses</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="add_new_item">Add Product</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_Application_Form">Application Form</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_donation">Donation</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_logout">Logout</string>
+
+    <string-array name="gender_mf">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="first">First Name</string>
+    <string name="last">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="residential1">Residential Address 1</string>
+    <string name="residential2">Residential Address 2</string>
+    <string name="ph_no">Phone Number</string>
+    <string name="birth">DOB(DD/MM/YYYY)</string>
+    <string name="gender">Gender</string>
+    <string name="cause">Please specify the cause in detail . . .</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="valid_shop_name">Please enter correct invisible name</string>
+    <string name="valid_name">Please enter correct name</string>
+    <string name="valid_email">Please enter correct email</string>
+    <string name="valid_password">Please enter number and character password</string>
+    <string name="valid_mobile">Please enter correct mobile no</string>
+    <string name="valid_confirm_password">Password doesnot match</string>
+    <string name="valid_address">Please enter correct address name</string>
+    <string name="valid_pan_no">Please enter correct pan no</string>
+
+    <string name="valid_product_name">Please enter product name</string>
+    <string name="valid_product_price">Please enter product price</string>
+    <string name="valid_product_designer">Please enter product designer</string>
+    <string name="valid_product_size">Please enter product size</string>
+    <string name="valid_product_refundable_deposit">Please enter product refundable deposit</string>
+    <string name="valid_product_weekend_hire">Please enter product weekend hire</string>
+    <string name="valid_product_short_description">Please enter product short description</string>
+    <string name="valid_product_description">Please enter product description</string>
+
+    <string name="valid_event_name">Please enter product name</string>
+    <string name="valid_event_price">Please enter product price</string>
+    <string name="valid_event_offer">Please enter product designer</string>
+    <string name="valid_event_location">Please enter product size</string>
+    <string name="valid_event_date">Please enter product refundable deposit</string>
+    <string name="valid_event_description">Please enter product description</string>
+
+    <string name="valid_required">Required</string>
+
+
+</resources>

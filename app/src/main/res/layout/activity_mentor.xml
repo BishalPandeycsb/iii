@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.MentorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/activity_full_margin"
+                    android:paddingVertical="@dimen/activity_large_text_size">
+
+                    <EditText
+                        android:id="@+id/mentoring_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Name"
+                        android:nextFocusDown="@id/emailForm"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/mentoring_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Phone No"
+                        android:nextFocusDown="@id/learning_email"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/mentoring_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:nextFocusDown="@id/learning_suburb"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/mentoring_suburb"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Suburb"
+                        android:nextFocusDown="@id/learning_address"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/mentoring_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/activity_text_full_size"
+                        android:background="@drawable/form_design"
+                        android:drawablePadding="@dimen/activity_half_margin"
+                        android:hint="Message"
+                        android:nextFocusDown="@id/learning_child_help"
+                        android:paddingLeft="@dimen/activity_text_full_size"
+                        android:paddingRight="@dimen/activity_half_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin_padding_fifteen"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/mentoring_button"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_btn_drawable"
+                        android:paddingHorizontal="@dimen/activity_large_text_size"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
